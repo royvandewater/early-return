@@ -27,6 +27,7 @@ Statements
 Example
 -------
 
+```Coffee
 class Product
   # Register events that will trigger this event
   @on 'change:price', 'change:quantity'
@@ -51,3 +52,4 @@ class Product
 
   clause is_correct_total_price
     arg.total_price == arg.price * arg.quantity
+```

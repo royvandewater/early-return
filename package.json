@@ -20,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/royvandewater/early-return/issues"
   },
-  "homepage": "https://github.com/royvandewater/early-return"
+  "homepage": "https://github.com/royvandewater/early-return",
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "mocha": "^1.21.4"
+  },
+  "dependencies": {
+    "jison": "^0.4.15"
+  }
 }
