@@ -4,7 +4,8 @@
   "description": "Language that abolishes if conditionals, leverages early returns, and uses events a lot",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test"
+    "start": "mocha --compilers coffee:coffee-script/register --require coffee-script --require test/test_helper.coffee --recursive --growl --reporter spec --growl --watch",
+    "test": "mocha --compilers coffee:coffee-script/register --require coffee-script --require test/test_helper.coffee --recursive --growl --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -23,9 +24,13 @@
   "homepage": "https://github.com/royvandewater/early-return",
   "devDependencies": {
     "chai": "^1.9.2",
-    "mocha": "^1.21.4"
+    "mocha": "^1.21.4",
+    "sinon": "^1.10.3",
+    "sinon-chai": "^2.5.0"
   },
   "dependencies": {
-    "jison": "^0.4.15"
+    "coffee-script": "^1.8.0",
+    "jison": "^0.4.15",
+    "lodash": "^2.4.1"
   }
 }
